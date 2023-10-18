@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff6b6b, #ffcc6a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        .heart {
+            width: 50px; /* Set the width of your heart GIF */
+        }
+
+        h1, p, .link {
+            font-size: 18px;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .link {
+            text-decoration: underline;
+            color: #ff6b6b;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="message">
+        <img src="img/srry.gif" class="heart" alt="Heart GIF">
+        <h1>I miss you, my love.</h1>
+        <p>Please forgive me for any mistakes I've made.</p>
+
+        <p>If you have time, would you mind if we can talk rn? :></p>
+        <a href="https://meet.google.com/hag-fpsy-rrq" class="link">Waiting for you here</a>
+    </div>
+
+    <script>
+        // Function to add professionalism
+        function makeProfessional() {
+            const message = document.getElementById("message");
+            const professionalText = document.createElement("p");
+            professionalText.innerHTML = "With all my heart, I apologize for any wrongs, my dear.";
+            message.appendChild(professionalText);
+        }
+
+        // Call the function after a delay
+        setTimeout(makeProfessional, 2000);
+    </script>
+</body>
+</html>
+
